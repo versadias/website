@@ -17,8 +17,8 @@ function Header() {
                 </div>
                 <div>
                     <a href="/"><img src={OpenseaLogo} alt="Opensea" className="nav-icon" /></a>
-                    <a href="/"><img src={TwitterLogo} alt="Twitter" className="nav-icon" /></a>
-                    <a href="/"><img src={DiscordLogo} alt="Discord" className="nav-icon" /></a>
+                    <a href="https://twitter.com/versadias"><img src={TwitterLogo} alt="Twitter" className="nav-icon" /></a>
+                    <a href="https://discord.gg/7a4Y8ucPea"><img src={DiscordLogo} alt="Discord" className="nav-icon" /></a>
                 </div>
             </div>
         </div>

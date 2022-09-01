@@ -1,3 +1,8 @@
+::selection {
+    background-color: #000;
+    color: #fff!important;
+}
+
 .header {
     background-color: #1B1B1B;
     @apply container mx-auto mt-8 py-8 px-16 rounded-3xl;
@@ -34,4 +39,45 @@
     background: -webkit-radial-gradient(circle, rgba(23,201,104,1) 0%, rgba(25,158,86,1) 100%);
     background: radial-gradient(circle, rgba(23,201,104,1) 0%, rgba(25,158,86,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#17c968",endColorstr="#199e56",GradientType=1);
+}
+
+.orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.shadower {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.meta-card {
+    @apply h-80 w-3/4 mx-auto bg-cover bg-center relative rounded-2xl;
+}
+
+.meta-card .content {
+    @apply absolute bottom-2 right-4 font-black text-right;
+}
+
+.liner {
+    background: rgb(23,201,104);
+    background: -moz-linear-gradient(90deg, rgba(23,201,104,1) 0%, rgba(18,156,81,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(23,201,104,1) 0%, rgba(18,156,81,1) 100%);
+    background: linear-gradient(90deg, rgba(23,201,104,1) 0%, rgba(18,156,81,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#17c968",endColorstr="#129c51",GradientType=1);
+    @apply w-32 h-0.5 rounded-full;
+}
+
+.floating {
+    animation: float 5s infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
