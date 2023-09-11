@@ -20,7 +20,7 @@ function Footer() {
                         
                         <div className="w-full">
                             <p className="text-white border-b border-gray border-opacity-25 border-dashed pb-2 w-1/2 mb-2">Extra</p>
-                            <a href="#">
+                            <a href="/">
                                 <p className="text-gray py-1">Careers</p>
                             </a>
                             <a href="/privacy-policy">
