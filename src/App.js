@@ -15,9 +15,9 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="services" element={<Services />} />
-        <Route path="privacy-policy" element={<PPolicy />} />
-        <Route path="cookie-policy" element={<CPolicy />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/privacy-policy" element={<PPolicy />} />
+        <Route path="/cookie-policy" element={<CPolicy />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
