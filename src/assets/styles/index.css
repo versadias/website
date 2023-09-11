@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #000;
+}
+
+
+.bg-header-dzn {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.80)), url("../images/banner_4x.webp");
+  height: 25vh;
+}
+
+.get-touch {
+  mask-image: linear-gradient(-75deg, rgba(93, 239, 151, 0.4) 30%, rgba(93, 239, 151, 1) 50%, rgba(93, 239, 151, .4) 70%);
+  mask-size: 200%;
+  animation: shine 2s infinite;
+  @apply text-white;
+}
+
+.arrow {
+  animation: floating-arrow 2s infinite;
+}
+
+.ver-gray {
+  color: #b6b6b6;
+}
+
+.leading-looser {
+  line-height: 1.1!important;
+}
+
+.navbar {
+  @apply text-gray;
+}
+
+.navbar span:hover, .navbar span:focus {
+  @apply text-white;
+}
+
+.secondary-logo {
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.secondary-logo:hover, .secondary-logo:focus {
+  opacity: 25%;
+  transition: all .15s ease-in;
+}
+
+.modal-dzn {
+  @apply h-full;
+}
+
+.modal-dzn div {
+  @apply h-full;
+}
+
+.__react_modal_image__icon_menu a {
+  margin: 20px;
+}
+
+.__react_modal_image__header {
+  background-color: transparent!important;
+}
+
+.bg-dzn {
+  background: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.65)), url(https://i.imgur.com/GF8YU4b.png) repeat-x 50% 0;
+  animation: infinite-shift-left 3000s linear;
+}
+
+@keyframes infinite-shift-left {
+  0% {
+    background-position: 50000px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+@keyframes floating-arrow {
+  from { transform: translate(0,  0px); }
+  50%  { transform: translate(6px, 0px); }
+  to   { transform: translate(-0, 0px); }    
+}
